@@ -6,7 +6,7 @@ body {
     margin: 0;
 }
 .container {
-    max-width: 900px;
+    max-width: 1200px;
     margin: auto;
 }
 h1 {
@@ -18,7 +18,7 @@ h1 {
 /* Sử dụng Flexbox để căn chỉnh 3 item */
 .qr-grid {
     display: flex; 
-    flex-wrap: wrap; 
+    flex-wrap: nowrap; 
     justify-content: center; 
     gap: 40px;
 }
@@ -27,7 +27,9 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 200px;
+    width: 380px;
+    height: fit-content;
+    flex-shrink: 0;
     background-color: #ffffff;
     border-radius: 12px;
     padding: 15px;
@@ -35,8 +37,8 @@ h1 {
 }
 
 .qr-item img {
-    width: 180px;
-    height: 180px;
+    width: 350px;
+    height: 350px;
     object-fit: contain;
     border: 1px solid #e9ecef;
     padding: 5px;
@@ -55,17 +57,4 @@ h1 {
     display: block;
     font-size: 13px;
     color: #6c757d;
-}
-
-/* Responsive: Trên màn hình nhỏ, hiển thị mỗi item một hàng */
-@media (max-width: 600px) {
-    .qr-item {
-        width: 80%;
-        margin: 0 0 20px 0;
-    }
-    
-    .qr-item img {
-        width: 220px;
-        height: 220px;
-    }
 }
