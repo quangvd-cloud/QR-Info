@@ -1,12 +1,12 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
-    padding: 20px 10px; /* Thêm padding ngang */
-    background-color: #f8f9fa; /* Nền xám nhạt */
+    padding: 20px 10px;
+    background-color: #f8f9fa;
     margin: 0;
 }
 .container {
-    max-width: 900px; /* Mở rộng tối đa */
+    max-width: 900px;
     margin: auto;
 }
 h1 {
@@ -27,7 +27,7 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 200px; /* Đã tăng lên 200px (để chứa ảnh 180px) */
+    width: 200px;
     background-color: #ffffff;
     border-radius: 12px;
     padding: 15px;
@@ -46,26 +46,26 @@ h1 {
 .qr-item p {
     margin-top: 15px;
     margin-bottom: 5px;
-    font-weight: 700; /* Rất đậm */
+    font-weight: 700;
     font-size: 16px;
-    color: #007bff; /* Màu xanh nổi bật cho tên */
+    color: #007bff;
 }
 
 .qr-item span {
     display: block;
     font-size: 13px;
-    color: #6c757d; /* Màu xám cho chức danh */
+    color: #6c757d;
 }
 
 /* Responsive: Trên màn hình nhỏ, hiển thị mỗi item một hàng */
 @media (max-width: 600px) {
     .qr-item {
-        width: 80%; /* Chiếm phần lớn chiều rộng màn hình */
+        width: 80%;
         margin: 0 0 20px 0;
     }
     
     .qr-item img {
-        width: 220px; /* Ảnh lớn hơn trên điện thoại để dễ quét */
+        width: 220px;
         height: 220px;
     }
 }
